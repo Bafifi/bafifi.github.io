@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h1 class="name">Belal Afifi</h1>
+            <div class="title">Software Engineer</div>
+        </div>
+
+        <div class="card-body">
+            <div class="social-links">
+                <a href="mailto:bafifi500@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/bafifi" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/belal-afifi-83ba00219" target="_blank" class="social-link"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <div class="projects-section">
+                <h2 class="section-title">FEATURED PROJECTS</h2>
+                <div class="projects-carousel">
+                    <div class="carousel-inner">
+                        <div class="project-card">
+                            <h3 class="project-title">Gaming AI Discord Bot</h3>
+                            <p class="project-desc"> Enabled users to register game IDs across multiple games, allowing
+                                automated tracking of player data. Leveraged local text-to-speech and large language
+                                models (LLMs)
+                                with Retrieval-Augmented Generation (RAG) to analyze game data and queue
+                                personalized post-match insights, which were delivered via Discord voice
+                                channels.
+                            </p>
+                            <div class="tech-stack">Go • PostgreSQL • Docker</div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="project-title">Automatic Insurance Lead Import</h3>
+                            <p class="project-desc">Developed a Python-based solution leveraging Selenium to automate
+                                login and lead imports from the client's insurance dashboard. The tool eliminated manual
+                                page refreshes, enabling real-time lead acquisition and increasing the agency's share of
+                                leads from a shared pool, significantly boosting operational efficiency and contributed
+                                to increased sales volume.</p>
+                            <div class="tech-stack">Python • Selenium • Javascript</div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="project-title">Windows Application Activity Tracker</h3>
+                            <p class="project-desc">Developed a Python-based system to monitor Windows application usage
+                                and visualize the data through a web interface built with Next.js. Focused on dynamic
+                                data plotting and interactive charting to provide users with clear, actionable insights.
+                                Enabled real-time analysis and enhanced data comprehension through visually engaging
+                                dashboards.
+                            </p>
+                            <div class="tech-stack">Next.js • Python • TailwindCSS</div>
+                        </div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

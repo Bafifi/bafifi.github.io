@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(30, 41, 67, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.card-header {
+    background: #1e2943;
+    padding: 3rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.title {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #a8b2c7;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+.social-link {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    background: #1e2943;
+}
+
+.social-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(30, 41, 67, 0.2);
+}
+
+.social-link:hover::after {
+    opacity: 1;
+}
+
+.projects-section {
+    border-top: 1px solid #eef0f5;
+    padding-top: 1.5rem;
+}
+
+.section-title {
+    text-align: center;
+    color: #1e2943;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.projects-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.project-card {
+    min-width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    color: #1e2943;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.project-desc {
+    color: #4a5568;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.tech-stack {
+    color: #1e2943;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    background: #1e2943;
+    transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin: 1rem;
+        border-radius: 15px;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .social-link {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .card-header {
+        padding: 2rem;
+    }
+}
